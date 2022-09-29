@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+    byebug
   namespace :api do
     resources :recipes, only: [:index, :create]
     post "/signup", to: "users#create"
